@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm turbo build",
+  "buildCommand": "npm build",
   "github": {
     "silent": true
   }
