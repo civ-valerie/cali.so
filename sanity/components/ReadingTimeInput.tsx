@@ -31,11 +31,11 @@ function flattenBlocks(blocks: SanityBlock[]): string[] {
 export default function ReadingTimeInput(props: NumberInputProps) {
   const value = React.useDeferredValue(props.value)
   const { schemaType } = props
-  const { members } = useFormBuilder()
+  const { members } = useFormBuilder() as any
 
   const generate = React.useCallback(() => {
     // find the member that has the key of "body"
-    const bodyMember = members.find((member) => {
+    const bodyMember = members.find((member: any) => {
       if (member.kind === 'field') {
         // eslint-disable-next-line @typescript-eslint/ban-ts-comments
         // @ts-ignore
