@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm build",
+  "buildCommand": "next build",
   "github": {
     "silent": true
   }
